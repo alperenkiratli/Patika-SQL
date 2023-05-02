@@ -1,0 +1,98 @@
+Soru1) test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+Soru2) Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+Soru3) Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+Soru4) Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.+
+
+Soru1) 
+CREATE TABLE employee
+(
+	id INTEGER PRIMARY KEY,
+	name VARCHAR(50) NOT NULL,
+	email VARCHAR(100)NOT NULL,
+	birtday DATE
+
+Soru2)
+
+insert into employee (id, name, email, birtday) values	(	1	,	'Cymbre'	,	'kspeightg@networkadvertising.org'	,	'25/12/2022'	)
+insert into employee (id, name, email, birtday) values	(	2	,	'Ellynn'	,	'zskuseh@oakley.com'	,	'26/10/2022'	)
+insert into employee (id, name, email, birtday) values	(	3	,	'Deva'	,	'jmadneri@youtube.com'	,	'13/03/2023'	)
+insert into employee (id, name, email, birtday) values	(	4	,	'Horten'	,	'dcostallj@usgs.gov'	,	'18/09/2022'	)
+insert into employee (id, name, email, birtday) values	(	5	,	'Bliss'	,	'mlowethk@loc.gov'	,	'23/10/2022'	)
+insert into employee (id, name, email, birtday) values	(	6	,	'Kristian'	,	'achattenl@storify.com'	,	'03/12/2022'	)
+insert into employee (id, name, email, birtday) values	(	7	,	'Zora'	,	'kmocklerm@prnewswire.com'	,	'01/09/2021'	)
+insert into employee (id, name, email, birtday) values	(	8	,	'Jessee'	,	'ccreavenn@kickstarter.com'	,	'30/09/2021'	)
+insert into employee (id, name, email, birtday) values	(	9	,	'Delphinia'	,	'gcockshutto@fastcompany.com'	,	'17/09/2021'	)
+insert into employee (id, name, email, birtday) values	(	10	,	'Marven'	,	'acunneyp@cbc.ca'	,	'04/11/2021'	)
+insert into employee (id, name, email, birtday) values	(	11	,	'Ase'	,	'pgasnellq@vk.com'	,	'27/08/2021'	)
+insert into employee (id, name, email, birtday) values	(	12	,	'Kimball'	,	'crentollr@ebay.com'	,	'25/06/2022'	)
+insert into employee (id, name, email, birtday) values	(	13	,	'Corri'	,	'sjons@joomla.org'	,	'21/02/2022'	)
+insert into employee (id, name, email, birtday) values	(	14	,	'Gerti'	,	'jdorbont@lulu.com'	,	'30/09/2022'	)
+insert into employee (id, name, email, birtday) values	(	15	,	'Augustine'	,	'kwittericku@webeden.co.uk'	,	'10/02/2022'	)
+insert into employee (id, name, email, birtday) values	(	16	,	'Pansie'	,	'ehyamsv@1688.com'	,	'24/02/2022'	)
+insert into employee (id, name, email, birtday) values	(	17	,	'Cullin'	,	'mbuneyw@so-net.ne.jp'	,	'19/09/2022'	)
+insert into employee (id, name, email, birtday) values	(	18	,	'Stefa'	,	'raitchesonx@moonfruit.com'	,	'30/04/2022'	)
+insert into employee (id, name, email, birtday) values	(	19	,	'Jdavie'	,	'dkittmany@imageshack.us'	,	'26/06/2022'	)
+insert into employee (id, name, email, birtday) values	(	20	,	'Kimmie'	,	'ttrevnaz@thetimes.co.uk'	,	'15/12/2021'	)
+insert into employee (id, name, email, birtday) values	(	21	,	'Elayne'	,	'bmourton10@gizmodo.com'	,	'07/10/2022'	)
+insert into employee (id, name, email, birtday) values	(	22	,	'Merissa'	,	'avickar11@sciencedaily.com'	,	'14/01/2022'	)
+insert into employee (id, name, email, birtday) values	(	23	,	'Remy'	,	'ggalland12@examiner.com'	,	'03/09/2022'	)
+insert into employee (id, name, email, birtday) values	(	24	,	'Dayle'	,	'cpunton13@unesco.org'	,	'30/01/2023'	)
+insert into employee (id, name, email, birtday) values	(	25	,	'Twyla'	,	'hnanelli14@bizjournals.com'	,	'28/04/2023'	)
+insert into employee (id, name, email, birtday) values	(	26	,	'Blair'	,	'cskipperbottom15@cnbc.com'	,	'29/03/2023'	)
+insert into employee (id, name, email, birtday) values	(	27	,	'Aymer'	,	'bsallery16@cbc.ca'	,	'16/01/2023'	)
+insert into employee (id, name, email, birtday) values	(	28	,	'Gisele'	,	'lbillyeald17@hexun.com'	,	'13/06/2022'	)
+insert into employee (id, name, email, birtday) values	(	29	,	'Chen'	,	'esnoxell18@friendfeed.com'	,	'24/06/2022'	)
+insert into employee (id, name, email, birtday) values	(	30	,	'Hendrik'	,	'difill19@mail.ru'	,	'10/07/2022'	)
+insert into employee (id, name, email, birtday) values	(	31	,	'Claudie'	,	'esandwich1a@digg.com'	,	'17/02/2022'	)
+insert into employee (id, name, email, birtday) values	(	32	,	'Blanche'	,	'aandree1b@furl.net'	,	'18/07/2022'	)
+insert into employee (id, name, email, birtday) values	(	33	,	'Leandra'	,	'bmccartney1c@sohu.com'	,	'18/09/2021'	)
+
+Soru3)
+
+UPDATE employee
+SET name = 'Ali Kurnazi'
+WHERE email ='dbssdfng0@prgfgfacy.gov.au'
+RETURNING*;
+
+UPDATE employee
+SET email = 'poosdgehnn@ogr.ghythsim.tt.tr'
+WHERERE id = 4
+RETURNING*;
+
+UPDATE employee
+SET birtday = '1475-02-10'
+WHERE name = 'pss'
+RETURNING*;
+
+UPDATE employee
+SET name= 'lolipop'
+WHERE name LIKE 'Z%'
+RETURNING*;
+
+UPDATE employee
+SET name= 'rets'
+WHERE name LIKE 'Y%'
+RETURNING*;
+
+Soru4)
+
+DELETE FROM employee
+WHERE name ='Kayser'
+RETURNING*;
+
+DELETE FROM employee
+WHERE id=7
+RETURNING*;
+
+DELETE FROM employee
+WHERE email = 'difill19@mail.ru'
+RETURNING*;
+
+DELETE FROM employee
+WHERE id=19
+RETURNING*;
+
+DELETE FROM employee
+WHERE birtday ='18/09/2021'
+RETURNING*;
+
